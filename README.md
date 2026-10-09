@@ -24,7 +24,7 @@ It contains:
 | 2 | [Uninformed Search](week02_uninformed_search/) |
 | 3 | [Informed Search](week03_informed_search/) |
 | 4 | [Local Search and Optimisation](week04_local_search/) |
-| 5 | Constraint Satisfaction Problems |
+| 5 | [Constraint Satisfaction Problems](week05_csp/) |
 | 6 | Adversarial Search |
 | 7 | Logic |
 | 8 | Knowledge Systems |
