@@ -171,35 +171,37 @@ def best_move(state, counter):
 # TASK 6 — ALPHA-BETA PRUNING
 # --------------------------------------------------
 
-def alpha_beta(state, maximizing, alpha, beta, counter):
-    """Return the same score as Minimax, pruning irrelevant branches.
 
-    alpha = best score MAX can guarantee so far.
-    beta  = best score MIN can guarantee so far.
-    """
+
+def alpha_beta(state, maximizing, alpha, beta, counter):
+    """Evaluate a game state using Minimax with Alpha-Beta Pruning."""
+
     counter["nodes"] += 1
+
     if is_terminal(state):
         return utility(state)
-    if maximizing:
-        best = float("-inf")
-        for move in available_moves(state):
-            score = alpha_beta(make_move(state, move, "X"), False,
-                               alpha, beta, counter)
+
+    player = "X" if maximizing else "O"
+    best = float("-inf") if maximizing else float("inf")
+
+    for move in available_moves(state):
+        new_state = make_move(state, move, player)
+
+        score = alpha_beta(
+            new_state, not maximizing, alpha, beta, counter
+        )
+
+        if maximizing:
             best = max(best, score)
             alpha = max(alpha, best)
-            if alpha >= beta:
-                break
-        return best
-    best = float("inf")
-    for move in available_moves(state):
-        score = alpha_beta(make_move(state, move, "O"), True,
-                           alpha, beta, counter)
-        best = min(best, score)
-        beta = min(beta, best)
+        else:
+            best = min(best, score)
+            beta = min(beta, best)
+
         if alpha >= beta:
             break
-    return best
 
+    return best
 
 # --------------------------------------------------
 # TASK 6 — BEST MOVE WITH ALPHA-BETA
