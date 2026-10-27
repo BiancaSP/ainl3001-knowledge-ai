@@ -26,7 +26,7 @@ It contains:
 | 4 | [Local Search and Optimisation](week04_local_search/) |
 | 5 | [Constraint Satisfaction Problems](week05_csp/) |
 | 6 | [Adversarial Search](week06_adversarial_search/) |
-| 7 | Logic |
+| 7 | [Logic](week07_logic/) |
 | 8 | Knowledge Systems |
 | 9 | Uncertainty |
 | 10 | Planning |
