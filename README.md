@@ -27,7 +27,7 @@ It contains:
 | 5 | [Constraint Satisfaction Problems](week05_csp/) |
 | 6 | [Adversarial Search](week06_adversarial_search/) |
 | 7 | [Logic](week07_logic/) |
-| 8 | Knowledge Systems |
+| 8 | [Knowledge Systems](week08_knoledge_systems) |
 | 9 | Uncertainty |
 | 10 | Planning |
 
