@@ -28,7 +28,7 @@ It contains:
 | 6 | [Adversarial Search](week06_adversarial_search/) |
 | 7 | [Logic](week07_logic/) |
 | 8 | [Knowledge Systems](week08_knoledge_systems) |
-| 9 | Uncertainty |
+| 9 | [Uncertainty](week09_uncertainty) |
 | 10 | Planning |
 
 Links for later weeks will be added as the relevant lab material is released.
